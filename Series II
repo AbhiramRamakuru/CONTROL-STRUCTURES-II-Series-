@@ -1,0 +1,35 @@
+'''
+QUESTION:
+Write a program to generate the following series --- 6,11,21,36,56,... 
+
+Input format: 
+The input containing an integer which denotes 'n' 
+
+Output format: 
+Print the series and refer the sample output for formatting.
+
+Sample Input:
+5
+
+Sample Output:
+6 11 21 36 56 
+
+'''
+
+# PROGRAM (Answer):
+
+#1st Method
+n=int(input())
+i=0
+k=6
+while i<n:
+    k=k+(i*5)
+    print(k,end=" ")
+    i=i+1
+    
+# #2nd Method
+# n=int(input())    
+# k=6  
+# for i in range(n):
+#     k=k+(i*5)
+#     print(k,end=" ")
