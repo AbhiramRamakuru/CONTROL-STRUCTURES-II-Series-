@@ -1,0 +1,33 @@
+'''
+QUESTION:
+Write a program to generate the following series 95.0, 115.5, 138.0,..., 189.0 
+
+Input format: 
+The input containing an integer which denotes 'n' 
+
+Output format:
+Print the series and refer the sample output for formatting
+
+Sample Input & Output:
+5
+95.0 115.5 138.0 162.5 189.0 
+
+'''
+
+# PROGRAM (Answer):
+
+#1st Method
+n=int(input())
+k = 95.0
+for i in range(0,n*2,2):   #range(start,stop,step)
+    print(k,end=" ")
+    k=k+20.5+i
+
+# #2nd Method    
+# n=int(input())
+# k=95.0
+# i=0
+# while i<n*2:
+#     print(k,end=" ")
+#     k=k+20.5+(2*i)
+#     i+=1   #i=i+1
