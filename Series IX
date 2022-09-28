@@ -1,0 +1,33 @@
+'''
+QUESTION:
+Write a program to generate the following series 2, 3, 8, 63, 3968
+
+Input format: 
+The input containing an integer which denotes 'n' 
+
+Output format: 
+Print the series and refer the sample output for formatting
+
+Sample Input & Output:
+5
+2 3 8 63 3968 
+
+'''
+
+# PROGRAM (Answer):
+
+#Using for loop
+n=int(input())
+p=2
+for i in range(n):
+    print(p,end=" ")
+    p=(p**2)-1
+    
+# #Using while loop
+# n=int(input())
+# p=2
+# i=0
+# while i<n:
+#     print(p,end=" ")
+#     p=(p**2)-1
+#     i+=1
